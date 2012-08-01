@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Map Settings" android:summary="Controls map features">
+        <CheckBoxPreference android:title="Map turns with you" android:summaryOn="Summary when on" android:summaryOff="Summary when off" android:defaultValue="false"/>
+        <ListPreference android:title="Route Line Colour" android:entries="@array/route_line_labels" android:entryValues="@array/route_line_values"/>
+    </PreferenceCategory>
+    
+    
+</PreferenceScreen>

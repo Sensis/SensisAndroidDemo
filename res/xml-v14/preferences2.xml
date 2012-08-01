@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Display Settings" android:summary="Controls how map is displayed">
+        <SwitchPreference android:title="Perspective" android:switchTextOn="3D" android:switchTextOff="2D"/>
+        <SwitchPreference android:title="Night Mode" android:switchTextOn="On" android:switchTextOff="Off"/>
+    </PreferenceCategory>
+    
+    
+</PreferenceScreen>

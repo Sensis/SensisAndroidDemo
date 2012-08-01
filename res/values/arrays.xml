@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string-array name="route_line_labels">
+  <item>Dark Blue</item>
+  <item>Light Blue</item>
+  <item>Purple</item>
+ </string-array>
+ 
+<string-array name="route_line_values">
+  <item>Dark Blue</item>
+  <item>Light Blue</item>
+  <item>Purple</item>
+ </string-array>
+ 
+</resources>

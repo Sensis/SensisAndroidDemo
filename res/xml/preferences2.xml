@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Display Settings" android:summary="Controls how map is displayed">
+        <CheckBoxPreference android:title="3D Perspective" android:summaryOn="3D Mode" android:summaryOff="2D Mode"/>
+        <CheckBoxPreference android:title="Night Mode" android:summaryOn="Night Mode is ON" android:summaryOff="Night Mode is OFF"/>
+    </PreferenceCategory>
+    
+    
+</PreferenceScreen>

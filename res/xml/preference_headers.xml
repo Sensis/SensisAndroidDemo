@@ -1,0 +1,20 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <header
+        android:fragment="au.com.sensis.android.demo.DynamicPreferenceFragment"
+        android:summary="Controls map features"
+        android:title="Map Settings" >
+        <extra
+            android:name="resource"
+            android:value="preferences" />
+    </header>
+    <header
+        android:fragment="au.com.sensis.android.demo.DynamicPreferenceFragment"
+        android:summary="Controls how map is displayed"
+        android:title="Display Settings" >
+        <extra
+            android:name="resource"
+            android:value="preferences2" />
+    </header>
+
+</preference-headers>
