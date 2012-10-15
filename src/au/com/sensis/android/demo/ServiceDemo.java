@@ -49,7 +49,8 @@ public class ServiceDemo extends Activity implements ServiceConnection, SomeList
     @Override
     protected void onPause() {
         super.onPause();
-        unbindService(this);
+        service.notification();
+        service.removeListener(this);
     }
 
     @Override
@@ -76,8 +77,8 @@ public class ServiceDemo extends Activity implements ServiceConnection, SomeList
 
     @Override
     public void onServiceConnected(ComponentName name, IBinder service) {
-        this.service = ((PingableBinder)service).getService();
         Log.i("ServiceDemo", "Service Connected");
+        this.service = ((PingableBinder)service).getService();
     }
 
     @Override

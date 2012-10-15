@@ -8,6 +8,7 @@ import android.os.AsyncTask;
 import android.os.Binder;
 import android.os.IBinder;
 import android.support.v4.app.NotificationCompat;
+import android.util.Log;
 
 public class PingableService extends Service {
     
@@ -18,7 +19,15 @@ public class PingableService extends Service {
 
     @Override
     public IBinder onBind(Intent intent) {
+        Log.i("PingableService", "onBind"); 
         return binder;
+    }
+
+    @Override
+    public boolean onUnbind(Intent intent) {
+        Log.i("PingableService", "onUnbind");
+        notification();
+        return false;
     }
 
     @Override
@@ -33,9 +42,7 @@ public class PingableService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        new DataGeneratorTask().execute();
-        return Service.START_NOT_STICKY;
-        
+        return Service.START_REDELIVER_INTENT;
     }
     
     public String ping(){
@@ -59,7 +66,12 @@ public class PingableService extends Service {
     }
     
     public void addListener(SomeListener listener){
+        new DataGeneratorTask().execute();
         this.listener = listener;
+    }
+    
+    public void removeListener(SomeListener listener){
+        this.listener = null;
     }
     
     class PingableBinder extends Binder {
