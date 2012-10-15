@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class MainActivity extends ListActivity {
-    String demos[] = { "SoundDemo", "PreferencesDemo" };
+    String demos[] = { "SoundDemo", "PreferencesDemo", "MiniPagerDemo", "ServiceDemo_" };
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <Button
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show" 
+        android:layout_alignParentTop="true"/>
+
+    <Button
+        android:id="@+id/hide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hide" 
+        android:layout_below="@id/show"/>
+    
+        <Button
+        android:id="@+id/new_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="new data" 
+        android:layout_below="@id/hide"/>
+
+	 <android.support.v4.view.ViewPager
+		    android:id="@+id/content"
+        	android:layout_width="match_parent" 
+        	android:background="#ffffff"
+    		android:layout_height="50dp" 
+    		android:layout_alignParentBottom="true"/> 
+    		
+        	  
+  <!--	<TextView android:id="@id/content"
+        	android:layout_width="match_parent" 
+        	android:layout_height="wrap_content"
+        	android:text="Testing"
+        	android:background="#ffffff"
+        	android:paddingTop="50dp"
+        	android:paddingBottom="50dp"
+        	android:textSize="40dp"/> -->
+
+
+
+</RelativeLayout>

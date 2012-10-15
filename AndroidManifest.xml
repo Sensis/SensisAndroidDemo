@@ -26,6 +26,16 @@
         <activity
             android:name=".PreferencesDemo"
             android:label="Preferences Demo" />
+        <activity
+            android:name=".MiniPagerDemo"
+            android:label="Mini Pager Demo" />
+        
+        <activity
+            android:name=".ServiceDemo_"
+            android:label="Service Demo"/>
+        
+        <service android:name=".PingableService"/>
+        
     </application>
 
 </manifest>
